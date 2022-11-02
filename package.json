@@ -1,0 +1,14 @@
+{
+  "name": "famous-dogs-api",
+  "version": "1.0.0",
+  "description": "API to find the breed of famous dogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
