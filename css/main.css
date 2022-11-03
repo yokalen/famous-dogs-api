@@ -24,6 +24,7 @@ section{
 img{
     margin: 0.5%;
     object-fit: contain;
+    max-width: 40%;
 }
 
 /* On screens that are 801px or more */
@@ -38,7 +39,6 @@ img{
   /* On screens that are 800px or less*/
 @media screen and (max-width: 800px) {
     img{
-        background-color: blue;
         display: flex;
         flex-direction: column;
         max-width: 80%;
