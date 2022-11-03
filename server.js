@@ -12,7 +12,7 @@ const famousDogs = {
         'movie': 'Beethoven'
     },
     'clifford': {
-        'breed': 'Labrador Retriever',
+        'breed': 'Labrador',
         'movie': 'Clifford\'s Really Big Movie'
     },
     'fly': {

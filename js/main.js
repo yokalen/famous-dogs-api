@@ -14,6 +14,8 @@ async function apiRequest(){
         let breedName
         if(breed === 'German Shepherd'){
             breedName = breed.toLowerCase().split(' ').join('')
+        }else if(breed === 'St. Bernard'){
+            breedName = breed.toLowerCase().split('. ').join('')
         }else{
             breedName = breed.toLowerCase().split(' ').reverse().join('/')
         }
