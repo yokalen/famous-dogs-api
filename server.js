@@ -47,13 +47,13 @@ const famousDogs = {
         'breed': 'Great Dane',
         'movie': 'Scooby-Doo Where Are You?'
     },
+    'scrappy': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
     'snoopy': {
         'breed': 'Beagle',
         'movie': 'Snoopy, Come Home!'
-    },
-    'winn-dixie': {
-        'breed': 'Berger Picard',
-        'movie': 'Because of Winn-Dixie'
     },
     'buddy': {
         'breed': 'Golden Retriever',
