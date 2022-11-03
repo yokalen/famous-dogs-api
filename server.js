@@ -40,7 +40,7 @@ const famousDogs = {
         'movie': 'Toy Story'
     },
     'lady': {
-        'breed': 'American Cocker Spaniel',
+        'breed': 'Cocker Spaniel',
         'movie': 'Lady and the Tramp'
     },
     'scooby': {
@@ -60,7 +60,7 @@ const famousDogs = {
         'movie': 'Air Bud'
     },
     'hooch': {
-        'breed': 'French Mastiff',
+        'breed': 'Bull Mastiff',
         'movie': 'Turner and Hooch'
     },
     'milo': {
