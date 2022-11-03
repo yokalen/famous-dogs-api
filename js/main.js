@@ -11,7 +11,13 @@ async function apiRequest(){
         let breed = data.breed;
         document.querySelector('h2').innerText = breed
         console.log(breed)
-        let breedName = breed.toLowerCase().split(' ').reverse().join('/')
+        let breedName
+        if(breed = 'German Shepherd'){
+            breedName = breed.toLowerCase().split(' ').join('')
+        }else{
+            breedName = breed.toLowerCase().split(' ').reverse().join('/')
+        }
+        
         console.log(breedName)
         
         //get dog photos from the dog ceo api and place the photos in the DOM
@@ -24,10 +30,6 @@ async function apiRequest(){
         document.querySelector('#second').src = imgData.message[1]
         console.log(imgData.message[0])
         document.querySelector('#third').src = imgData.message[2]
-        // document.getElementById('first').src = imgData.message[0]
-        // document.getElementById('second').src = imgData.message[1]
-        // document.getElementById('third').src = imgData.message[3]
-
         
     }catch(error){
         console.log(error)
