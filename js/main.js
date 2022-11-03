@@ -12,7 +12,7 @@ async function apiRequest(){
         document.querySelector('h2').innerText = breed
         console.log(breed)
         let breedName
-        if(breed = 'German Shepherd'){
+        if(breed === 'German Shepherd'){
             breedName = breed.toLowerCase().split(' ').join('')
         }else{
             breedName = breed.toLowerCase().split(' ').reverse().join('/')
