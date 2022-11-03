@@ -72,8 +72,12 @@ const famousDogs = {
         'movie': 'The Wizard of Oz'
     },
     'balto': {
-        'breed': 'Siberian Husky',
+        'breed': 'Husky',
         'movie': 'Balto'
+    },
+    'togo': {
+        'breed': 'Husky',
+        'movie': 'Togo'
     },
     'unknown': {
         'breed': 'Unknown',
