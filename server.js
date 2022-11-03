@@ -64,7 +64,7 @@ const famousDogs = {
         'movie': 'Turner and Hooch'
     },
     'milo': {
-        'breed': 'Jack Russell',
+        'breed': 'Russell Terrier',
         'movie': 'The Mask'
     },
     'toto': {
