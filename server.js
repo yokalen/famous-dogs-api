@@ -43,7 +43,7 @@ const famousDogs = {
         'breed': 'American Cocker Spaniel',
         'movie': 'Lady and the Tramp'
     },
-    'scooby-Doo': {
+    'scooby': {
         'breed': 'Great Dane',
         'movie': 'Scooby-Doo Where Are You?'
     },
