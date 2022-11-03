@@ -4,6 +4,7 @@ const cors = require('cors')
 const PORT = 4000
 
 app.use(cors())
+app.use(express.static(__dirname));
 
 const famousDogs = {
     'beethoven': {
@@ -19,7 +20,7 @@ const famousDogs = {
         'movie': 'Babe'
     },
     'petey': {
-        'breed': 'American Staffordshire Terrier',
+        'breed': 'Staffordshire Bullterrier',
         'movie': 'The Little Rascals'
     },
     'lassie': {
