@@ -15,6 +15,10 @@ const famousDogs = {
         'breed': 'Labrador',
         'movie': 'Clifford\'s Really Big Movie'
     },
+    'doug':{
+        'breed': 'Golden Retriever',
+        'movie': 'Up'
+    },
     'fly': {
         'breed': 'Border Collie',
         'movie': 'Babe'
