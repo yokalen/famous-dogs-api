@@ -4,7 +4,7 @@ async function apiRequest(){
     const dogName = document.querySelector('input').value
     try{
         //use our api to find the breed using the name
-        const response = await fetch(`https://famous-dogs-api-fun.herokuapp.com/api/${dogName}`)
+        const response = await fetch(`/api/${dogName}`)
         const data = await response.json()
         const capitalName = dogName[0].toUpperCase() + dogName.slice(1)
         console.log(data)
