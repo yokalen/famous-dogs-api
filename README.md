@@ -6,7 +6,7 @@ Enter the name of a famous dog to find out their breed and see photos of other d
 
 ## Demo
 
-https://i.imgur.com/3gMuagO.gif
+https://i.imgur.com/BHC5yXC.gif
 
 ## Live Site
 
