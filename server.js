@@ -51,6 +51,14 @@ const famousDogs = {
         'breed': 'Great Dane',
         'movie': 'Scooby-Doo Where Are You?'
     },
+    'scooby doo': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
+    'scrappy': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
     'scrappy': {
         'breed': 'Great Dane',
         'movie': 'Scooby-Doo Where Are You?'
