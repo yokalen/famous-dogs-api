@@ -23,13 +23,17 @@ const famousDogs = {
         'breed': 'Border Collie',
         'movie': 'Babe'
     },
+    'lassie': {
+        'breed': 'Collie',
+        'movie': 'Lassie Come Home'
+    },
     'petey': {
         'breed': 'Staffordshire Bullterrier',
         'movie': 'The Little Rascals'
     },
-    'lassie': {
-        'breed': 'Collie',
-        'movie': 'Lassie Come Home'
+    'marley': {
+        'breed': 'Labrador',
+        'movie': 'Marley & Me'
     },
     'rin tin tin': {
         'breed': 'German Shepherd',
