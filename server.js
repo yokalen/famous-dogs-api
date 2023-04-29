@@ -79,6 +79,10 @@ const famousDogs = {
         'breed': 'Bull Mastiff',
         'movie': 'Turner and Hooch'
     },
+    'hachi': {
+        'breed': 'Akita',
+        'movie': 'Hachi: A Dog\'s Tale'
+    },
     'max': {
         'breed': 'Malinois',
         'movie': 'Max'
