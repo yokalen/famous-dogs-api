@@ -79,6 +79,10 @@ const famousDogs = {
         'breed': 'Bull Mastiff',
         'movie': 'Turner and Hooch'
     },
+    'lucky': {
+        'breed': 'Dalmatian',
+        'movie': '101 Dalmatians'
+    },
     'milo': {
         'breed': 'Russell Terrier',
         'movie': 'The Mask'
