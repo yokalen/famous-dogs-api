@@ -79,17 +79,17 @@ const famousDogs = {
         'breed': 'Bull Mastiff',
         'movie': 'Turner and Hooch'
     },
-    'old yeller': {
-        'breed': 'Labrador',
-        'movie': 'Old Yeller'
-    },
     'max': {
-        'breed': 'Belgian Malinois',
+        'breed': 'Malinois',
         'movie': 'Max'
     },
     'milo': {
         'breed': 'Russell Terrier',
         'movie': 'The Mask'
+    },
+    'old yeller': {
+        'breed': 'Labrador',
+        'movie': 'Old Yeller'
     },
     'otis': {
         'breed': 'Pug',
