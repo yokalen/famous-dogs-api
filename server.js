@@ -83,6 +83,10 @@ const famousDogs = {
         'breed': 'Russell Terrier',
         'movie': 'The Mask'
     },
+    'otis': {
+        'breed': 'Pug',
+        'movie': 'The Adventures of Milo and Otis'
+    },
     'toto': {
         'breed': 'Cairn Terrier',
         'movie': 'The Wizard of Oz'
