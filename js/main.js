@@ -9,13 +9,17 @@ async function apiRequest(){
         const capitalName = dogName[0].toUpperCase() + dogName.slice(1)
         console.log(data)
         const breed = data.breed;
-        document.querySelector('h2').innerText = `${capitalName} is a ${breed}!`
+        if(breed === 'Unknown'){
+            document.querySelector('h2').innerText = `${capitalName} is unknown!`
+        }else{
+            document.querySelector('h2').innerText = `${capitalName} is a ${breed}!`
         console.log(breed)
-        let breedName
+        };
+        let breedName;
         if(breed === 'German Shepherd'){
-            breedName = breed.toLowerCase().split(' ').join('')
+            breedName = breed.toLowerCase().split(' ').join('');
         }else if(breed === 'St. Bernard'){
-            breedName = breed.toLowerCase().split('. ').join('')
+            breedName = breed.toLowerCase().split('. ').join('');
         }else{
             breedName = breed.toLowerCase().split(' ').reverse().join('/')
         }
