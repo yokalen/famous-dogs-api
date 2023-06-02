@@ -95,6 +95,10 @@ const famousDogs = {
         'breed': 'Husky',
         'movie': 'Togo'
     },
+    'wishbone': {
+        'breed': 'Russell Terrier',
+        'movie': 'Wishbone'
+    },
     'unknown': {
         'breed': 'Unknown',
         'movie': 'Unknown'
