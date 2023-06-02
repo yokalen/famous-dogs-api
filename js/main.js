@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 async function apiRequest(){
     const dogName = document.querySelector('input').value
     try{
-        //use our api to find the breed using the name
+        //use api to find the breed by the name
         const response = await fetch(`/api/${dogName}`)
         const data = await response.json()
         const capitalName = dogName[0].toUpperCase() + dogName.slice(1)
@@ -22,17 +22,20 @@ async function apiRequest(){
         
         console.log(breedName)
         
-        //get dog photos from the dog ceo api and place the photos in the DOM
-        const resImg = await fetch(`https://dog.ceo/api/breed/${breedName}/images/random/3`)
-        const imgData = await resImg.json()
+        if (breedName === 'unknown'){
+            document.querySelector('img').src = 'https://i.imgur.com/O7uqASg.png';
+        }else{
+            //get dog photos from the dog ceo api and place the photos in the DOM
+            const resImg = await fetch(`https://dog.ceo/api/breed/${breedName}/images/random/3`)
+            const imgData = await resImg.json()
 
-        console.log(imgData.message[0])
-        document.querySelector('#first').src = imgData.message[0]
-        console.log(imgData.message[0])
-        document.querySelector('#second').src = imgData.message[1]
-        console.log(imgData.message[0])
-        document.querySelector('#third').src = imgData.message[2]
-        
+            console.log(imgData.message[0])
+            document.querySelector('#first').src = imgData.message[0] 
+            console.log(imgData.message[0])
+            document.querySelector('#second').src = imgData.message[1] 
+            console.log(imgData.message[0])
+            document.querySelector('#third').src = imgData.message[2] 
+        }
     }catch(error){
         console.log(error)
     }
