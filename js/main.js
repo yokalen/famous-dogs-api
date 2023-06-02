@@ -33,9 +33,9 @@ async function apiRequest(){
             console.log(imgData.message[0])
             document.querySelector('#first').src = imgData.message[0] 
             console.log(imgData.message[0])
-            document.querySelector('#second').src = imgData.message[1] 
+            document.querySelector('#second').src = imgData.message[1] || imgData.message[0]
             console.log(imgData.message[0])
-            document.querySelector('#third').src = imgData.message[2] 
+            document.querySelector('#third').src = imgData.message[2] || imgData.message[0]
         }else{
             document.querySelectorAll('img').forEach(img => img.src = 'https://i.imgur.com/giuR0SI.png')
         }

@@ -79,6 +79,10 @@ const famousDogs = {
         'breed': 'Staffordshire Bullterrier',
         'movie': 'The Little Rascals'
     },
+    'pongo': {
+        'breed': 'Dalmatian',
+        'movie': '101 Dalmatians'
+    },
     'rin tin tin': {
         'breed': 'German Shepherd',
         'movie': 'The Adventures of Rin Tin Tin'
