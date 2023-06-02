@@ -7,13 +7,29 @@ app.use(cors())
 app.use(express.static(__dirname));
 
 const famousDogs = {
+    'balto': {
+        'breed': 'Husky',
+        'movie': 'Balto'
+    },
     'beethoven': {
         'breed': 'St. Bernard',
         'movie': 'Beethoven'
     },
+    'buddy': {
+        'breed': 'Golden Retriever',
+        'movie': 'Air Bud'
+    },
+    'chance': {
+        'breed': 'Staffordshire Bullterrier',
+        'movie': 'Homeward Bound: The Incredible Journey'
+    },
     'clifford': {
         'breed': 'Labrador',
         'movie': 'Clifford\'s Really Big Movie'
+    },
+    'cujo': {
+        'breed': 'St. Bernard',
+        'movie': 'Cujo'
     },
     'doug':{
         'breed': 'Golden Retriever',
@@ -23,65 +39,25 @@ const famousDogs = {
         'breed': 'Border Collie',
         'movie': 'Babe'
     },
-    'lassie': {
-        'breed': 'Collie',
-        'movie': 'Lassie Come Home'
-    },
-    'petey': {
-        'breed': 'Staffordshire Bullterrier',
-        'movie': 'The Little Rascals'
-    },
-    'marley': {
-        'breed': 'Labrador',
-        'movie': 'Marley & Me'
-    },
-    'rin tin tin': {
-        'breed': 'German Shepherd',
-        'movie': 'The Adventures of Rin Tin Tin'
-    },
-    'samantha': {
-        'breed': 'German Shepherd',
-        'movie': 'I Am Legend'
-    },
-    'slinky': {
-        'breed': 'Dachshund',
-        'movie': 'Toy Story'
-    },
-    'lady': {
-        'breed': 'Cocker Spaniel',
-        'movie': 'Lady and the Tramp'
-    },
-    'scooby': {
-        'breed': 'Great Dane',
-        'movie': 'Scooby-Doo Where Are You?'
-    },
-    'scooby doo': {
-        'breed': 'Great Dane',
-        'movie': 'Scooby-Doo Where Are You?'
-    },
-    'scrappy': {
-        'breed': 'Great Dane',
-        'movie': 'Scooby-Doo Where Are You?'
-    },
-    'scrappy': {
-        'breed': 'Great Dane',
-        'movie': 'Scooby-Doo Where Are You?'
-    },
-    'snoopy': {
-        'breed': 'Beagle',
-        'movie': 'Snoopy, Come Home!'
-    },
-    'buddy': {
-        'breed': 'Golden Retriever',
-        'movie': 'Air Bud'
+    'hachi': {
+        'breed': 'Akita',
+        'movie': 'Hachi: A Dog\'s Tale'
     },
     'hooch': {
         'breed': 'Bull Mastiff',
         'movie': 'Turner and Hooch'
     },
-    'hachi': {
-        'breed': 'Akita',
-        'movie': 'Hachi: A Dog\'s Tale'
+    'lady': {
+        'breed': 'Cocker Spaniel',
+        'movie': 'Lady and the Tramp'
+    },
+    'lassie': {
+        'breed': 'Collie',
+        'movie': 'Lassie Come Home'
+    },
+    'marley': {
+        'breed': 'Labrador',
+        'movie': 'Marley & Me'
     },
     'max': {
         'breed': 'Malinois',
@@ -99,17 +75,53 @@ const famousDogs = {
         'breed': 'Pug',
         'movie': 'The Adventures of Milo and Otis'
     },
-    'toto': {
-        'breed': 'Cairn Terrier',
-        'movie': 'The Wizard of Oz'
+    'petey': {
+        'breed': 'Staffordshire Bullterrier',
+        'movie': 'The Little Rascals'
     },
-    'balto': {
-        'breed': 'Husky',
-        'movie': 'Balto'
+    'rin tin tin': {
+        'breed': 'German Shepherd',
+        'movie': 'The Adventures of Rin Tin Tin'
+    },
+    'samantha': {
+        'breed': 'German Shepherd',
+        'movie': 'I Am Legend'
+    },
+    'scooby': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
+    'scooby doo': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
+    'scrappy': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
+    'scrappy doo': {
+        'breed': 'Great Dane',
+        'movie': 'Scooby-Doo Where Are You?'
+    },
+    'shadow': {
+        'breed': 'Golden Retriever',
+        'movie': 'Homeward Bound: The Incredible Journey'
+    },
+    'slinky': {
+        'breed': 'Dachshund',
+        'movie': 'Toy Story'
+    },
+    'snoopy': {
+        'breed': 'Beagle',
+        'movie': 'Snoopy, Come Home!'
     },
     'togo': {
         'breed': 'Husky',
         'movie': 'Togo'
+    },
+    'toto': {
+        'breed': 'Cairn Terrier',
+        'movie': 'The Wizard of Oz'
     },
     'wishbone': {
         'breed': 'Russell Terrier',
