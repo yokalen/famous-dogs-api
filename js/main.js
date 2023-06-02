@@ -22,19 +22,18 @@ async function apiRequest(){
         
         console.log(breedName)
         
-        if (breedName === 'unknown'){
-            document.querySelector('img').src = 'https://i.imgur.com/O7uqASg.png';
-        }else{
-            //get dog photos from the dog ceo api and place the photos in the DOM
-            const resImg = await fetch(`https://dog.ceo/api/breed/${breedName}/images/random/3`)
+        //get dog photos from the dog ceo api and place the photos in the DOM
+        const resImg = await fetch(`https://dog.ceo/api/breed/${breedName}/images/random/3`)
+        if(resImg.ok){
             const imgData = await resImg.json()
-
             console.log(imgData.message[0])
             document.querySelector('#first').src = imgData.message[0] 
             console.log(imgData.message[0])
             document.querySelector('#second').src = imgData.message[1] 
             console.log(imgData.message[0])
             document.querySelector('#third').src = imgData.message[2] 
+        }else{
+            document.querySelectorAll('img').forEach(img => img.src = 'https://i.imgur.com/giuR0SI.png')
         }
     }catch(error){
         console.log(error)
